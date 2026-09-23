@@ -1,0 +1,38 @@
+body{
+  color: #ffffff;
+  background-color: #1b1b1b;
+  font-family: sans-serif;
+}
+.gameCard{
+  background-color: #222;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 15px;
+  padding: 20px;
+  cursor: pointer;
+  
+}
+.holderContainer{
+  margin: 32px auto;
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 32px;
+}
+.cardName{
+  font-size: 14px;
+}
+.cardImg{
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+}
+.cardRating{
+ color: rgb(197, 197, 64);
+}
+.cardRelease{
+  color: rgb(21, 144, 44);
+}
+.gameCard:hover{
+  transform: scale(1.03);
+}
